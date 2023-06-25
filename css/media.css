@@ -46,7 +46,7 @@
     }
 
     .member-card {
-        max-width: unset;
+        min-width: unset;
         width: calc((100% - 24px) / 2);
     }
 
@@ -88,5 +88,10 @@
     .doing {
         display: block;
         padding-bottom: 120px;
+    }
+
+    .member-card {
+        min-width: unset;
+        width: calc((100% - 24px * 3) / 4);
     }
 }
