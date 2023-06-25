@@ -217,14 +217,17 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    overflow: hidden;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .hero-container {
-    width: 1440px;
+    padding: 112px 0;
+    /* width: 1440px; */
+    width: 100%;
 }
 
 .hero-title {
@@ -233,8 +236,9 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--hero-text-color);
-    width: 100%;
-    max-width: 496px;
+    /* width: 100%;
+    max-width: 496px; */
+    width: 320px;
     margin: 0 auto;
 }
 
@@ -243,14 +247,15 @@ img {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.64px;
     color: var(--hero-text-color);
     background-color: var(--logo-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     display: block;
     min-width: 169px;
         height: 56px;
-    margin: 48px auto 0;
+    margin: 72px auto 0;
         padding: 16px 32px;
         border-radius: 4px;
     border: none;
@@ -422,8 +427,8 @@ img {
     fill: var(--social-icon-color);
 }
 
-.customers{
-    padding: 120px 0;
+.customers {
+    padding: 96px 0;
 }
 
 .customers-title {
@@ -439,15 +444,16 @@ img {
 
 .customers-logo-list {
     display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .customers-logo-item {
     height: 88px;
-    width: calc((100% - 24px * 5) / 6);
+    width: calc((100% - 16px) / 2);
+    /* width: calc((100% - 24px * 5) / 6); */
 }
 
 .customers-logo-link {
