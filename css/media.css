@@ -17,6 +17,10 @@
     .team > .container {
         max-width: 296px;
     }
+
+    .footer-input {
+        min-width: 398px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -145,6 +149,29 @@
     .customers > .container {
         max-width: 584px;
     }
+
+    .footer-container {
+        max-width: 584px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .social-footer-wrap {
+        align-items: start;
+    }
+
+    .footer-subscribe-wrap{
+        align-items: start;
+    }
+
+    .footer-input {
+        min-width: 264px;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -248,5 +275,14 @@
     }
     .customers-logo-item {
         width: calc((100% - 24px * 5) / 6);
+    }
+
+    .footer-container {
+        gap: 0;
+    }
+
+    .social-footer-wrap {
+        margin-left: 120px;
+        margin-right: 80px;
     }
 }
