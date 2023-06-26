@@ -182,6 +182,7 @@ img {
     padding: 24px 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .hamburger-icon {
@@ -202,6 +203,7 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.1);
     border-radius: 24px;
     background: var(--cornflower);
+    cursor: pointer;
 }
 
 .close-menu-icon {
@@ -239,8 +241,10 @@ img {
     color: var(--hover-focus-color);
 }
 
+.mob-contacts-wrap {
+    margin-top: auto;
+}
 .mob-address {
-    /* margin-top: 284px; */
 }
 
 .address-menu-mob {
