@@ -16,7 +16,7 @@
     <title>WebStuio</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
         <nav class="header-navigation">
             <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
@@ -32,8 +32,63 @@
             <li><a class="address-menu-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+            <svg class="hamburger-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+        </button>
         </div>
-    </header> -->
+        <div class="mob-menu-wrap">
+            <button type="button" class="close-menu-btn">
+                <svg class="close-menu-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="mob-menu">
+                <ul class="mob-menu-navigation list">
+                    <li><a class="mob-menu-link link current" href="./index.html">Studio</a></li>
+                    <li><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="mob-menu-link link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="mob-address">
+                <ul class="address-menu-mob list">
+                    <li><a class="mob-address-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li><a class="mob-address-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <ul class="social-list-mob">
+                <li class="social-list-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <main>
         <section class="hero">
             <div class="container hero-container">
@@ -90,9 +145,9 @@
             <div class="container doing-container">
             <h2 class="doing-title">What are we doing</h2>
             <ul class="list doing-list">
-                <li class="doing-item"><img src="./images/monitor.jpg" alt="monitor" width="360" height="360"></li>
-                <li class="doing-item"><img src="./images/phone_interface.jpg" alt="phone interface" width="360" height="360"></li>
-                <li class="doing-item"><img src="./images/phone_with_laptop.jpg" alt="phone with laptop" width="360" height="360"></li>
+                <li class="doing-item"><img srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x" src="./images/monitor.jpg" alt="monitor" width="360" height="360"></li>
+                <li class="doing-item"><img srcset="./images/phone_interface.jpg 1x, ./images/phone_interface-2x.jpg 2x" src="./images/phone_interface.jpg" alt="phone interface" width="360" height="360"></li>
+                <li class="doing-item"><img srcset="./images/phone_with_laptop.jpg 1x, ./images/phone_with_laptop-2x.jpg 2x" src="./images/phone_with_laptop.jpg" alt="phone with laptop" width="360" height="360"></li>
             </ul>
             </div>
         </section>
@@ -101,7 +156,7 @@
             <h2 class="team-title">Our Team</h2>
             <ul class="list team-list">
                 <li class="member-card">
-                        <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img srcset="./images/mark_guerrero.jpg 1x, ./images/mark_guerrero-2x.jpg 2x" src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260">
                     <div class="member-container"> 
                         <h3 class="team-member">Mark Guerrero</h3>
                         <p class="member-position">Product Designer</p>
@@ -138,7 +193,7 @@
                     </div>
                 </li>
                 <li class="member-card">
-                    <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264" height="260">
+                    <img srcset="./images/tom_ford.jpg 1x, ./images/tom_ford-2x.jpg 2x" src="./images/tom_ford.jpg" alt="Tom Ford" width="264" height="260">
                     <div class="member-container">
                     <h3 class="team-member">Tom Ford</h3>
                     <p class="member-position">Frontend Developer</p>
@@ -175,7 +230,7 @@
                     </div>
                 </li>
                 <li class="member-card">
-                    <img src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260">
+                    <img srcset="./images/camila_garcia.jpg 1x, ./images/camila_garcia-2x.jpg 2x" src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260">
                     <div class="member-container">
                     <h3 class="team-member">Camila Garcia</h3>
                     <p class="member-position">Marketing</p>
@@ -212,7 +267,7 @@
                     </div>
                 </li>
                 <li class="member-card">
-                    <img src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260">
+                    <img srcset="./images/daniel_wilson.jpg 1x, ./images/daniel_wilson-2x.jpg 2x" src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260">
                     <div class="member-container">
                     <h3 class="team-member">Daniel Wilson</h3>
                     <p class="member-position">UI Designer</p>
@@ -358,7 +413,7 @@
     </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close>
+            <button type="button" class="close-modal-btn" data-modal-close>
                 <svg class="close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
