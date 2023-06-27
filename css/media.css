@@ -1,8 +1,10 @@
 @media screen and (min-width: 428px) {
     .container {
-        max-width: 426px;
+        max-width: 428px;
     }
-
+    .social-list-mob {
+        gap: 56px;
+    }
     .hero-title {
         width: 320px;
         font-size: 36px;
@@ -21,17 +23,25 @@
     .footer-input {
         min-width: 398px;
     }
+
+    .modal {
+        width: 408px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 766px;
+        max-width: 768px;
+    }
+    
+    .header-navigation {
+        padding: unset;
     }
 
     .navigation {
        display: flex;
        gap: 40px;
-       padding-bottom: 24px;
+       /* padding-bottom: 24px; */
     }
     
     .navigation-link {
@@ -41,6 +51,7 @@
         display: block;
         transition: color var(--transition);
         padding-top: 24px;
+        padding-bottom: 24px;
         font-weight: 500;
     }
     
@@ -57,7 +68,7 @@
     .current::after {
         border-radius: 2px;
         left: 0;
-        bottom: -25px;
+        bottom: -1px;
         content: '';
         width: 100%;
         height: 4px;
@@ -70,10 +81,10 @@
     }
 
     .navigation-address {
-        padding-bottom: 16px;
+        /* padding-bottom: 16px; */
         display: block;
         font-style: normal;
-        padding-top: 16px;
+        /* padding-top: 16px; */
     }
 
     .address-menu {
@@ -110,6 +121,10 @@
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 1.12px;
+    }
+
+    .hero-button {
+        margin-top: 36px;
     }
 
     .benefits-item {
@@ -156,7 +171,10 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    
+    .logo-footer-container {
+        align-items: start;
+    }
     .social-footer-wrap {
         align-items: start;
     }
@@ -177,6 +195,8 @@
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .hero {
@@ -217,6 +237,10 @@
     .hero-container {
         width: 1440px;
         padding: 188px 0;
+    }
+
+    .hero-button {
+        margin-top: 48px;
     }
 
     .benefits-subtitle {
